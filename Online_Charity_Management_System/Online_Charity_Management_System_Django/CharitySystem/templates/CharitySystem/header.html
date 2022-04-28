@@ -1,0 +1,50 @@
+{% extends "CharitySystem/head-foot-page.html" %}
+{% load static %}
+{% block content %}
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="mt-5 mb-1">
+    <img src="{% static 'img/back.jpg' %}" sytle="height:50%" width="100%" alt="charity">
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="trend">
+    <div class="container">
+        <h3 class="pt-3">Top Stories</h3>
+        <h1><b>REASONS TO GIVE TO CHARITY</b></h1>
+
+        <div class="row">
+            <div class="col-4 ">
+                <img src="{% static 'img/side.jpeg' %}" alt="covid-19" width="100%" style="margin-top:15px;">
+            </div>
+            <div class="col-8  text-justify pt-3">
+                <p>Donating to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too. Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives.
+                </p>
+                <p>Donating to charity is a major mood-booster. The knowledge that you’re helping others is hugely empowering and, in turn, can make you feel happier and more fulfilled.
+                    Many people are concerned that their donations to charity may be reduced by tax or administrative costs, preventing the full amount from reaching the people or causes they really want to help. Thankfully there are ways to make the most of every donation to charity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container mt-3 pb-3 ">
+        <div class="row">
+            <div class="col-8 pt-3">
+                <p class="text-justify">Your own charitable donations can inspire your nearest and dearest to give to causes important to them, and could even bring about a family-wide effort to back a charity or charities that have special significance to you as a group.</p>
+                <p class="text-justify">With the help of donors and the vision of the creators of Transparent Hands, We have made a huge impact in the lives of the people that is visible with transparency to our donors and the people interested in the process of saving lives.</p>
+                <button class="btn btn-outline-primary btn-lg" onclick="location.href='/payment/'">Donate</button>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/against.jpg' %}" alt="covid-19" width="100%" style="margin-top:15px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+
+{% endblock %}
